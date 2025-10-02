@@ -1,1 +1,45 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Fluid Host for Win32"/><title>Loop Component</title><script defer="defer" src="./static/js/main.51156314.js"></script><link href="./static/css/main.c47195de.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="animatedSplashScreen" hidden></div><div id="fluidElement"></div></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Emergency Response</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Emergency Response & Disaster Management System</h1>
+    </header>
+
+    <section class="form-section">
+        <h2>Report an Incident</h2>
+        <form id="incident-form" action="../backend/report_incident.php" method="POST">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="type">Incident Type:</label>
+            <select id="type" name="type" required>
+                <option value="accident">Accident</option>
+                <option value="fire">Fire</option>
+                <option value="medical emergency">Medical Emergency</option>
+                <option value="natural disaster">Natural Disaster</option>
+            </select>
+
+            <label for="severity">Severity:</label>
+            <select id="severity" name="severity" required>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <button type="submit">Report Incident</button>
+        </form>
+    </section>
+</body>
+</html>
